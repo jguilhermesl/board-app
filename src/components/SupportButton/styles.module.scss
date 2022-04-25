@@ -1,0 +1,21 @@
+.buttonDonate {
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+    
+    button {
+        background: #ffb800;
+        border: 0;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: #fff;
+        transition: all 0.4s;
+
+        &:hover {
+            transform: scale(1.2)
+        }
+    }
+}

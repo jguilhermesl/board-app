@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.box {
+    width: 80vw;
+    background: #17181F;
+    margin: 5rem auto 0 auto;
+    border-radius: 7px;
+    padding: 25px 20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 600px) {
+        width: 90vw;
+    }
+
+    .info {
+        font-size: 1.5rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+
+        svg {
+            color: #FFB800;
+        }
+
+        time {
+            color: #FFB800;
+        }
+
+    }
+
+    p {
+        margin-top: 20px;
+        padding: 10px;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .iconBack {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: #fff;
+        font-size: 2rem;
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            color: #FFB800;
+        }
+    }
+}

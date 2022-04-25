@@ -1,0 +1,32 @@
+.headerContainer {
+    background: #141a29;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+
+    .headerContent {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+
+        img {
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            gap: 3rem;
+            color: #fff;
+            margin-left: 5rem;
+
+            a{
+                font-size: 1.3rem;
+            }
+        }
+
+        button {
+            margin-left: auto;
+        }
+    }
+}

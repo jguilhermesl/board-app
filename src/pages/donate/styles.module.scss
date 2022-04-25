@@ -1,0 +1,61 @@
+.container {
+    width: 80vw;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    * {
+        font-family: 'Outfit', sans-serif;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 90vw;
+    }
+
+    img {
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+      margin-top: 10px;
+      font-size: 1.3rem;  
+
+      span {
+          color: #019950;
+      }
+    } 
+    
+    strong {
+        font-size: 1.1rem; 
+        margin: 10px 0 1rem 0;
+    }
+
+    .vip {
+        background: #019950;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        p {
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+    }
+}

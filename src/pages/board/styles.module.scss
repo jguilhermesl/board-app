@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.container {
+    background: #17181f;
+    margin: 2rem auto;
+    max-width: 1120px;
+    padding: 2rem;
+    border-radius: 6px;
+
+    * {
+        font-family: 'Outfit', sans-serif;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 90%;
+            height: 50px;
+            background-color: #20212c;
+            border: 1px solid #424242;
+            border-radius: 6px 0 0 6px;
+            padding: 3px 10px;
+            color: #fff;
+        }
+
+        button {
+            width:7%;
+            height: 50px;
+            border-radius: 0 6px 6px 0;
+            background: #ffb800;
+
+            svg {
+                color: #fff;
+                font-size: 2.3rem;
+                font-weight: 900;
+            }
+        }
+    }
+    
+    section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 1rem;
+
+        h1 {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .taskList {
+            width: 100%;
+            margin-top: 1rem;
+            
+            p {
+                color: #fff;
+                font-size: 1.2rem;
+                line-height: 150%;
+            }
+
+            .boxAction {
+                background: #20212c;
+                margin-top: 1rem;
+                border-radius: 5px;
+                padding: 10px 10px;
+                .actions {
+                    display: flex;
+                    align-items: center;
+                    color: #fff;
+                    margin-top: 10px;
+
+                    button {
+                        background: transparent;
+                        border: none;
+                    }
+
+                    .calendar {
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.1rem;
+                        color: #ffb800;
+                    }
+
+                    .edit {
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.1rem;
+                        margin-left: 1rem;
+                        color: #fff;
+
+                    }
+
+                    .delete {
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.1rem;
+                        margin-left:  auto;
+                        color: #fff;
+                    }
+
+                    svg {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.thanks {
+    background: #17181f;
+    margin: 2rem auto;
+    max-width: 1120px;
+    padding: 2rem;
+    border-radius: 6px;
+
+    h1 {
+        color: #ffb800;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        color: #fff;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+}
