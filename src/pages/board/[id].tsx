@@ -38,7 +38,7 @@ export default function Task({ data }: TaskListProps) {
                     <time>{task.createdFormated}</time>
                 </div>
                 <p>{task.task}</p>
-                <Link href="/board"><FiArrowLeft className={styles.iconBack} /></Link>
+                <Link passHref="/board"><FiArrowLeft className={styles.iconBack} /></Link>
             </article>
         </>
     )

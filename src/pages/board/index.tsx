@@ -8,6 +8,7 @@ import { ptBR } from 'date-fns/locale'
 
 import Head from 'next/head'
 import Link from 'next/link'
+
 import { SupportButton } from '../../components/SupportButton'
 import { FiPlus, FiCalendar, FiEdit2, FiTrash, FiClock, FiX } from 'react-icons/fi'
 
