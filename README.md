@@ -36,6 +36,7 @@ Tecnologias usadas no projeto:
     <li>NextJS</li>
     <li>NextAuth</li>
     <li>Firebase</li>
+    <li>React Toastify</li>
     <li>PayPal developer</li>
 </ul>
 

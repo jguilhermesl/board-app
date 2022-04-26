@@ -12,7 +12,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import { SupportButton } from '../../components/SupportButton'
-import { } from 'react-icons/fi'
+import { toast } from 'react-toastify'
 
 import Image from 'next/image'
 import rocketImg from '../../../public/images/rocket.svg'
@@ -74,7 +74,15 @@ export default function Donate({ user }: DonateProps) {
                     }}
                     onApprove={ (data, actions) => {
                         return actions.order.capture().then( (details) => {
-                            alert('Compra aprovada')
+                            toast.success('Compra aprovada!', {
+                                position: "top-left",
+                                autoClose: 4000,
+                                hideProgressBar: false,
+                                closeOnClick: true,
+                                pauseOnHover: true,
+                                draggable: true,
+                                progress: undefined,
+                                });
                             handleSaveDonate();
                         })
                     }}

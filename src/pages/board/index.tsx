@@ -5,6 +5,7 @@ import { getSession } from 'next-auth/client'
 
 import { format, formatDistance } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
+import { toast } from 'react-toastify'
 
 import Head from 'next/head'
 import Link from 'next/link'
@@ -43,7 +44,15 @@ export default function Board({ user, data }: BoardProps) {
         e.preventDefault();
 
         if (input === '') {
-            alert('Digite alguma tarefa.')
+            toast.info('Digite uma tarefa.', {
+                position: "top-left",
+                autoClose: 2500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
             return
         }
 
@@ -61,6 +70,15 @@ export default function Board({ user, data }: BoardProps) {
                     setTasks(data);
                     setTaskEdit(null);
                     setInput('')
+                    toast.success('Task editada com sucesso!', {
+                        position: "top-left",
+                        autoClose: 2500,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        });
                 })
 
             return
@@ -74,7 +92,15 @@ export default function Board({ user, data }: BoardProps) {
                 userId: user.id,
             })
             .then((doc) => {
-                alert('Cadastrado com sucesso')
+                toast.success('Task cadastrada com sucesso!', {
+                    position: "top-left",
+                    autoClose: 2500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    });
                 let data = {
                     id: doc.id,
                     created: new Date(),
@@ -95,7 +121,15 @@ export default function Board({ user, data }: BoardProps) {
     async function handleDelete(id: string) {
         await firebase.firestore().collection('tasks').doc(id).delete()
             .then(() => {
-                alert('Deletado com sucesso.')
+                toast.success('Task deletada com sucesso!', {
+                    position: "top-left",
+                    autoClose: 2500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    });
                 let taskDeleted = tasks.filter(item => {
                     return (item.id !== id)
                 })
