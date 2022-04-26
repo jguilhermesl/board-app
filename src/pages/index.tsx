@@ -32,7 +32,7 @@ export default function Home({ data }: HomeProps) {
         <Image src={boardUser} alt="Ferramenta board" width={350} height={280} />
 
         <section className={styles.callToAction}>
-          <h1>Uma ferramenta pra seu dia a dia!</h1>
+          <h1>Uma ferramenta para o seu dia a dia!</h1>
           <h2>Escreva, planeje e organize-se...</h2>
           <p><span>100% gratuita</span> e online.</p>
         </section>
